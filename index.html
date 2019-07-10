@@ -4,44 +4,9 @@
 <meta charset="UTF-8">
 <title>Login</title>
 
-<link rel="stylesheet" type="text/css" href="estilos.css">
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
 <script src="Jquery/jquery-1.6.3.min.js"></script>
-
-<script>
-/*
-	$(document).ready(function(){
-
-		$("#abierto").click(function(){
-		
-			$("#login form").slideToggle(300);
-			$(this).toggleClass("cerrado");//efecto sube y baja
-
-		});
-
-	});
-	*/
-//son dos metodos distintos
-//primero deslizar hacia arriba y hacia abajo
-//segundo desliza hacia abajo y desparece
-	$(document).ready(function(){
-
-		$("#abierto").toggle(
-
-		function(){
-
-			$("#login form").slideDown(300);
-			$(this).addClass("cerrado");
-
-		},
-
-		function(){
-			$("#login form").fadeOut(600);//efecto simula una desaparicion 
-			$(this).removeClass("cerrado");
-		});
-
-	});
-
-</script>
+<script src="js/funcionalidad.js"></script>
 </head>
 <body>
 
